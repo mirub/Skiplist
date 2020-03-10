@@ -1,0 +1,26 @@
+Student: Banu Miruna-Elena
+Group: 311CA
+
+For this homework I have implemented a Skiplist which I use to 
+keep track of the scoreboard and, later on, to sort the players
+by points. The SkipList class contains several member functions
+that help create and modify the skiplist itself.
+
+I have used the skiplist firstly to store the racers by their ids
+so it is more efficient to access them when it is needed to add
+points to their current score. Upon every print request, I have
+created a copy of the current skiplist by overwriting the = 
+operator and adding the elements by their scores so it sorts the
+scoreboard automatically. 
+
+In the function that calculates the standings after each race, 
+I have used 2 arrays: one that stores the ids and one that stores
+the score for every player in this manner: the player id[k] has
+the score score[k]. The points are being distributed after I sort
+the time array ascending and the id array accordingly. Furthermore,
+I updated the score in the skiplist for each player and their
+position after the current race. In the end, I checked whether a
+print has been requested, and, if so, I updated the previous print
+position of the player in the skiplist and I made another skiplist 
+which adds the elements from the first one by score and I printed
+it to the output file.
