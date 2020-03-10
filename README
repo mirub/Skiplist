@@ -1,7 +1,6 @@
-Student: Banu Miruna-Elena
-Group: 311CA
+# Skiplist
 
-For this homework I have implemented a Skiplist which I use to 
+For this project I have implemented a Skiplist which I use to 
 keep track of the scoreboard and, later on, to sort the players
 by points. The SkipList class contains several member functions
 that help create and modify the skiplist itself.
